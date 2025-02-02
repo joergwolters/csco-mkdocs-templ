@@ -1,0 +1,19 @@
+# Configuration file for yamllint
+# It extends the default conf by adjusting some options.
+
+extends: default
+
+rules:
+  braces: {max-spaces-inside: 1, level: error}
+  brackets: {max-spaces-inside: 1, level: error}
+  comments: disable
+  comments-indentation: disable
+  document-start:
+    present: false
+  document-end:
+    present: false
+  # 80 chars should be enough, but don't fail if a line is longer.
+  line-length:
+    max: 80
+    level: warning
+    allow-non-breakable-inline-mappings: true

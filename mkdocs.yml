@@ -1,0 +1,121 @@
+# Project information
+site_name: Documentation template
+# site_url: https://example.com/documentation
+site_author: Cisco Cloud + AI Infrastructure Team
+site_description: >-
+  An example documentation set up
+
+# Repository
+# repo_name: squidfunk/mkdocs-material
+# repo_url: https://github.com/squidfunk/mkdocs-material
+
+# Copyright
+copyright: Copyright &copy; 2023 - 2025 Cisco Cloud + AI Infrastructure
+
+# Theme configuration
+theme:
+  name: material
+  language: en
+  features:
+    - content.code.annotate # allows to add annotations to all inline- and block-level elements, as well as code blocks
+    - content.code.copy # allow the user to copy a code block's contents to the clipboard
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.footer
+    - navigation.indexes # link an index.md page to a section
+    # - navigation.sections
+    - navigation.tabs # Enable top-level sections in a menu layer below the header
+    #- navigation.tabs.sticky # Navigation tabs will always remain visible when scrolling down
+    - navigation.top # show back-to-top button
+    - navigation.tracking # Enable anchor tracking
+    - search.highlight # highlight all occurrences
+    - search.share # show a share button
+    - search.suggest # display the likeliest completion for the last word
+    - toc.follow
+    - toc.integrate # Render table of contents as part of the navigation sidebar on the left
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: cisco_blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  favicon: assets/favicon.png
+
+extra:
+  generator: false # hide the line "Made with Material for MkDocs"
+
+# CSS Stylesheet
+extra_css:
+  - css/extra.css
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags:
+      tags_file: tags.md
+
+watch:
+  - includes # Monitor for changes in folder outside of the docs directory
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append: 
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - Home: 
+    - index.md
+    - getting-started.md
+  - Tags: tags.md
+  - About: 
+    - about/changelog.md
+    - about/license.md
+
+# not_in_nav: |
