@@ -2,7 +2,7 @@
 
 > *Project documentation with Markdown*
 
-[![Built with Material for MkDocs]][Built with Material for MkDocs]
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 The purpose of the template in this repository is to give you a starting point
 for setting up documentation that makes use of features that Material for MkDocs
@@ -81,6 +81,3 @@ docs/css
 includes/
     abbreviations.md    # List of abbreviations part of the documentation.
 ```
-
-<!-- Badges -->
-[Built with Material for MkDocs]: https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material
