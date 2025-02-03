@@ -1,4 +1,4 @@
-# MkDocs
+# Technical documentation
 
 > *Project documentation with Markdown*
 
@@ -6,19 +6,22 @@
 [![Build Status][GHAction-image]][GHAction-link]
 [![Coverage Status][codecov-image]][codecov-link]
 
-MkDocs is a **fast**, **simple** and **downright gorgeous** static site
-generator that's geared towards building project documentation. Documentation
-source files are written in Markdown, and configured with a single YAML
-configuration file. It is designed to be easy to use and can be extended with
-third-party themes, plugins, and Markdown extensions.
+MkDocs is a static site generator geared towards building project documentation.
+Documentation source files are written in Markdown, and configured with a single
+YAML configuration file.
+
+Material for MkDocs is packed with many great features for technical writing. This
+preconfigured template showcases some of the available specimen that can be used
+directly from within Markdown files.
 
 Please see the [Documentation][mkdocs] for an introductory tutorial and a full
-user guide. This template uses the [Material for MkDocs][material] theme.
+user guide. This template uses the [Material for MkDocs][material] extension.
 
 ## Links
 
-- [Official Documentation][mkdocs]
-- [Latest Release Notes][release-notes]
+- [Official MkDocs Documentation][mkdocs]
+- [Latest MkDocs Release Notes][release-notes]
+- [Official Material for MkDocs documentation][material]
 - [Catalog of third-party plugins, themes and recipes][catalog]
 
 ## Commands
@@ -30,28 +33,50 @@ user guide. This template uses the [Material for MkDocs][material] theme.
 
 ## Project layout
 
-    mkdocs.yml           # The configuration file.
-    docs/
-        index.md         # The documentation homepage.
-        ...              # Other markdown pages, images and other files.
-    docs/about/
-        changelog.md     # Keep a changelog.
-        license.md       # The license stuff.
-    docs/css/
-        extra.css        # Extra CSS theme configuration.
-    includes/
-        abbreviations.md # Glossary of all abbreviations.
+```text
+.github/
+.github/workflows/
+.vscode/
+    settings.json       # VS Code configuration file.
+.gitignore              # Git ignore configuration file.
+.markdownlint.json      # Markdown linter configuration file.
+.yamllint               # YAML lint configuration file.
+Pipfile                 # Specify package requirements.
+Pipfile.lock            # Specify specific package versions,
+                        # based on packages present in Pipfile.
+README.md               # Template readme file.
+mkdocs.yml              # The configuration file.
+docs/
+    index.md            # The documentation homepage.
+    getting-started.md  # Getting started when creating from scratch.
+    tags.md             # Tags index page.
+docs/about/
+    changelog.md        # Change log.
+    license.md          # The license stuff.
+docs/assets/
+    favicon.png         # Material for MkDocs default favicon.
+docs/assets/images/
+docs/assets/screenshots
+docs/css
+    extra.css           # Theme color configuration.
+includes/
+    abbreviations.md    # List of abbreviations part of the documentation.
+```
 
 ## Upgrading
 
-To upgrade MkDocs and Material for MkDocs to the latest version, use pip:
+To upgrade MkDocs and Material for MkDocs to the latest version, use pipenv:
 
-    pip install -U mkdocs-material
+```bash
+pipenv update mkdocs-material
+```
 
 You can determine your currently installed version using `mkdocs --version`:
 
-    $ mkdocs --version
-    mkdocs, version 1.6.1 from /path/to/mkdocs (Python 3.12)
+```bash
+$ mkdocs --version
+mkdocs, version 1.6.1 from /path/to/mkdocs (Python 3.12)
+```
 
 <!-- Badges -->
 [codecov-image]: https://codecov.io/github/mkdocs/mkdocs/coverage.svg?branch=master

@@ -79,7 +79,6 @@ template default.
 ```text
 .github/
 .github/workflows/
-    ci.yml              # GitHub CI workflow.
 .vscode/
     settings.json       # VS Code configuration file.
 .gitignore              # Git ignore configuration file.
