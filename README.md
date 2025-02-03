@@ -1,49 +1,74 @@
-# A Material for Mkdocs Documentation Template
+# Technical documentation template
 
-> *Project documentation with Markdown*
+> *Technical documentation with Markdown*
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-The purpose of the template in this repository is to give you a starting point
-for setting up documentation that makes use of features that Material for MkDocs
-provides and of selected integrations with other plugins that are of specific
-relevance to technical documentation.
+Purpose of the repository template is to provide you a starting point for setting
+up documentation that makes use of features that Material for MkDocs provides and
+of selected integrations with other plugins that are of specific relevance to
+technical documentation.
 
-## What is solution documentation
+MkDocs is a static site generator geared towards building project documentation.
+Documentation source files are written in Markdown, and configured with a single
+YAML configuration file.
 
-Solution documentation is a user manual that helps customers understand what the
-solution is about, how it functions, best practices, troubleshoot guides, and
-feature updates it has to offer.
-Some solution documentations also include use cases and examples to help users
-understand how each feature works. They are supported by the read more articles
+Material for MkDocs is packed with many great features for technical writing. This
+preconfigured template showcases some of the available specimen that can be used
+directly from within Markdown files.
+
+## What is technical documentation
+
+Technical documentation describes the application or solution, purpose, creation
+or architecture of a product or service. Its goal is to explain something an
+organization offers.
+
+There are several types of technical documents, each intended for a certain audience.
+Effectively written documents can help the intended audience by educating them on
+necessary details, such as the operation of a product.
+
+It helps to understand what the application or solution is about, how it functions,
+and includes feature updates and best practices it has to offer.
+
+Examples of technical documentation include:
+
+- How-to guides
+- User guides
+- Best practices
+- Troubleshoot guides
+
+Some documentations also include use cases and examples to help users understand
+how each feature works. They are supported by the read more articles
 appendix and images of the solution specifics.
 
 ## Using it
 
 This repository is a [template repository], so you can create as many forks of it
-as you like and your repository will contain only a single commit to start with,
+as you like. Your new repository will contain only a single commit to start with,
 instead of the whole history of the template. Also, you can create a private
 repository from this template (while forks inherit the visibility settings from
 the original).
 
 [template repository]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 
-Simply hit the `Use this template` button. You can set the
-specifics of your new repository from there.
+Simply hit the `Use this template` button. You can set the specifics of your new
+repository from there.
 
 Next, hit the `Clone` button and copy the HTTPS URL of the project.
 
-On your local computer change to the project folder and execute:
+On your local computer change to the location where you like to store the new
+repository. Optionally create a new folder and specify the folder name when cloning
+the template repository:
 
 ```bash
-git clone https://github.com/<git user name>/<repository name>.git
+git clone https://github.com/<git user name>/<repository name>.git <Optional folder>
 
-cd <repository name>
+cd <repository name> # or the optional folder name.
 
 pipenv sync
 ```
 
-Now you are all set to start your project documentation.
+Now you are all set to start your technical documentation.
 
 ## Project layout
 
