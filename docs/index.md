@@ -34,7 +34,7 @@ user guide. This template uses the [Material for MkDocs][material] extension.
 ## Project layout
 
 ```text
-.github/
+.cache/mkdocs_puml      # Local cache for PlantUML plugin
 .github/workflows/
 .vscode/
     settings.json       # VS Code configuration file.
@@ -60,7 +60,7 @@ docs/assets/screenshots
 docs/css
     extra.css           # Theme color configuration.
 includes/
-    abbreviations.md    # List of abbreviations part of the documentation.
+    abbreviations.md    # List of abbreviations in the documentation.
 ```
 
 ## Upgrading

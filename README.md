@@ -4,18 +4,15 @@
 
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-Purpose of the repository template is to provide you a starting point for setting
-up documentation that makes use of features that Material for MkDocs provides and
-of selected integrations with other plugins that are of specific relevance to
-technical documentation.
+This repository template provides you with a starting point for setting up Markdown
+based documentation. It makes use of features for technical writing provided by
+Material for MkDocs including selected integrations with other plugins that are of
+specific relevance to technical documentation.
 
-MkDocs is a static site generator geared towards building project documentation.
-Documentation source files are written in Markdown, and configured with a single
-YAML configuration file.
+This preconfigured template showcases some of the available specimen that can be
+used directly from within Markdown files.
 
-Material for MkDocs is packed with many great features for technical writing. This
-preconfigured template showcases some of the available specimen that can be used
-directly from within Markdown files.
+View or build your project documentation using MkDocs as static site generator.
 
 ## What is technical documentation
 
@@ -49,6 +46,10 @@ instead of the whole history of the template. Also, you can create a private
 repository from this template (while forks inherit the visibility settings from
 the original).
 
+The template configuration leans towards Cisco regarding the theme color coding
+and the prefilled content of the glossary. Nevertheless, both can be changed easily
+to adapt your specific needs.
+
 [template repository]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
 
 Simply hit the `Use this template` button. You can set the specifics of your new
@@ -58,7 +59,8 @@ Next, hit the `Clone` button and copy the HTTPS URL of the project.
 
 On your local computer change to the location where you like to store the new
 repository. Optionally create a new folder and specify the folder name when cloning
-the template repository:
+the template repository. Finally, synchronize the single package dependency to ensure
+you can make use of MkDocs right from the beginning:
 
 ```bash
 git clone https://github.com/<git user name>/<repository name>.git <Optional folder>
@@ -77,7 +79,7 @@ configure Material for MkDocs to use a different layout, this is simply the
 template default.
 
 ```text
-.github/
+.cache/mkdocs_puml      # Local cache for PlantUML plugin
 .github/workflows/
 .vscode/
     settings.json       # VS Code configuration file.
@@ -103,5 +105,5 @@ docs/assets/screenshots
 docs/css
     extra.css           # Theme color configuration.
 includes/
-    abbreviations.md    # List of abbreviations part of the documentation.
+    abbreviations.md    # List of abbreviations in the documentation.
 ```

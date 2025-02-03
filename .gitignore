@@ -69,3 +69,6 @@ SecretKey.txt
 
 # MkDocs documentation
 site/
+
+# MkDocs cache directory
+.cache/

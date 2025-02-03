@@ -10,6 +10,11 @@ Pipenv is a Python virtualenv management tool under the MIT license:
 
 * pypa/pipenv - [View license](https://github.com/pypa/pipenv/blob/main/LICENSE)
 
+MkDocs puml is a fast and simple package that brings plantuml diagrams to
+MkDocs documentation.
+
+* plantuml - [View license](https://github.com/MikhailKravets/mkdocs_puml/blob/master/LICENSE)
+
 Themes used under license from the Material for MkDocs projects.
 
 * Material for MkDocs theme - [View license](https://squidfunk.github.io/mkdocs-material/insiders/license/).

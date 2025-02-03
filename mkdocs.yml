@@ -67,6 +67,14 @@ extra_css:
 
 # Plugins
 plugins:
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml
+      puml_keyword: uml
+      cache:
+        backend: local
+        local:
+          path: ".cache/mkdocs_puml"
+          join_project_name: false
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags:
