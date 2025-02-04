@@ -120,7 +120,12 @@ markdown_extensions:
 nav:
   - Home: 
     - index.md
-    - getting-started.md
+  - How-To Guides:
+    - how-to-guides/index.md
+    - how-to-guides/getting-started.md
+  - Solution:
+    - solution/introduction.md
+    - solution/installation-guide.md
   - Tags: tags.md
   - About: 
     - about/changelog.md

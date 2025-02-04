@@ -172,7 +172,7 @@ To use a different icon, create an `assets` subdirectory in the `docs` directory
 and copy your custom `favicon.ico` or `favicon.png` file to that directory.
 MkDocs will automatically detect and use that file as your favicon icon.
 
-[Material for MkDocs favicon]: assets/favicon.png
+[Material for MkDocs favicon]: ../assets/favicon.png
 
 ## Building the site
 
