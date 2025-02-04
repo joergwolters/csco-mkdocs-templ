@@ -13,27 +13,19 @@ tags:
 
 ## Introduction
 
-A summary paragraph introducing a solution concept, explaining its importance or
-relevance, and providing an overview of the content that will be covered
-in the document (scope).
+A short summary paragraph introducing and explaining the fundamental decisions
+and solution strategies, explaining its importance or relevance, and providing
+an overview of the content that will be covered in the document (scope).
 
-Typical wording to use is:
+These include:
 
-* This article explains the basics of {concept} and how it works in {the context}.
-
-{Then include a paragraph with a definition of the concept you are explaining.
-If more definitions are needed, include those definitions here as a bulleted list.}
-
-{This section usually doesn't have a separate heading that explicitly says
-Definition; it can precede all the rest.}
-
-{Add visual aid to complement your explanations visually.}
-
-{Image goes here.}
-
-(Optional) Image/Figure: {Image title, which concisely explains the image or
-figure. It can be represented by annotations on the image.}
-
+- Technology concept
+- Decisions about the top-level decomposition of the system, e.g. usage of an
+  architectural pattern or design pattern
+- Decisions on how to achieve key quality goals
+- Relevant organizational decisions, e.g. selecting a development process or
+  delegating certain tasks to third parties
+  
 ## System Overview
 
 {Use this section to provide a reader with a context, prehistory, or background
@@ -41,17 +33,15 @@ information on the architecture, technologies used and possible dependencies.}
 
 Typical wordings to use are:
 
-* The reason {X} is designed that way is because historically, ...
+- The idea of {X} originated from the growing demand for ...
 
-* The idea of {X} originated from the growing demand for ...
-
-* Recent advancements in {X} and {Y} have opened up new possibilities
+- Recent advancements in {X} and {Y} have opened up new possibilities
     for ...
 
-* With the rise of {X}, the need for things such as {Y} has become
+- With the rise of {X}, the need for things such as {Y} has become
     paramount.
 
-* Over the past decade, {advancements in technology} have transformed
+- Over the past decade, {advancements in technology} have transformed
     the way ...
 
 ## Use cases
