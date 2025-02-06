@@ -3,30 +3,7 @@ tags:
   - intro
 ---
 
-# Introduction template
-
-> This template provides a structured approach to document technical aspects of
-> your software or infrastructure projects. It includes writing instructions
-> and boilerplate text that you can customize, use as-is, or completely replace
-> with your own text. This text is indicated in {curly brackets}. Make sure you
-> replace the placeholders with your own text.
-
-## Introduction
-
-A short summary paragraph introducing and explaining the fundamental decisions
-and solution strategies, explaining its importance or relevance, and providing
-an overview of the content that will be covered in the document (scope).
-
-These include:
-
-- Technology concept
-- Decisions about the top-level decomposition of the system, e.g. usage of an
-  architectural pattern or design pattern
-- Decisions on how to achieve key quality goals
-- Relevant organizational decisions, e.g. selecting a development process or
-  delegating certain tasks to third parties
-  
-## System Overview
+## Conceptual documentation
 
 {Use this section to provide a reader with a context, prehistory, or background
 information on the architecture, technologies used and possible dependencies.}
@@ -58,10 +35,7 @@ Table: {Table title which concisely explains the comparison.}
 ## (Optional) Related resources
 
 {Use this section to provide links to documentation related to the concept that
-the user can read for more information.
-If you can name this section manually (it is not generated automatically or has
-a heading pre-agreed within a team), we recommend to use "Related concepts" or
-"Additional information" as more descriptive ones.}
+the user can read for more information.}
 
 If you would like to dive deeper or start implementing {concept},
 check out the following resources:
@@ -136,7 +110,13 @@ Change Log
 
 2. Change Summary
 
-Linked concepts/solutions
+Additional Information:
+
+1. Additional Information 1
+
+2. Additional Information 2
+
+Related concepts
 
 1. Concept 1
 

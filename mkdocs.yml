@@ -120,11 +120,18 @@ markdown_extensions:
 nav:
   - Home: 
     - index.md
+  - Architecture:
+      - architecture/index.md
+      - 1 | System concept and overview: architecture/concept.md
+      - 2 | Physical infrastructure: architecture/physical-infrastructure.md
+      - 3 | Network infrastructure: architecture/network.md
+      - 4 | Server and storage: architecture/server-storage.md
+      - 5 | Asset management: architecture/asset-mgmt.md
+      - 6 | Software and licenses: architecture/software-licenses.md
+      - 7 | Application and services: architecture/application-services.md
   - How-To Guides:
-    - how-to-guides/getting-started.md
-  - Solution:
-    - solution/index.md
-    - solution/installation-guide.md
+      - how-to/getting-started.md
+      - how-to/installation-guide.md
   - Tags: tags.md
   - About: 
     - about/changelog.md
